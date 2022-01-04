@@ -53,9 +53,6 @@ class Ui_MainWindow(object):
         self.btn_delete = QtWidgets.QPushButton(self.frame_2)
         self.btn_delete.setObjectName("btn_delete")
         self.horizontalLayout.addWidget(self.btn_delete)
-        self.btn_refrescar = QtWidgets.QPushButton(self.frame_2)
-        self.btn_refrescar.setObjectName("btn_refrescar")
-        self.horizontalLayout.addWidget(self.btn_refrescar)
         self.btn_frecuencia = QtWidgets.QPushButton(self.frame_2)
         self.btn_frecuencia.setObjectName("btn_frecuencia")
         self.horizontalLayout.addWidget(self.btn_frecuencia)
@@ -95,9 +92,6 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "Aprueba"))
         self.btn_insert.setText(_translate("MainWindow", "Insertar"))
         self.btn_delete.setText(_translate("MainWindow", "Eliminar"))
-        self.btn_refrescar.setText(_translate("MainWindow", "refrescar"))
         self.btn_frecuencia.setText(_translate("MainWindow", "Calcular frecuencia"))
         self.btn_probabilidad.setText(_translate("MainWindow", "Calcular Probalidad"))
         self.btn_predicir.setText(_translate("MainWindow", "Predicir"))
-
-
