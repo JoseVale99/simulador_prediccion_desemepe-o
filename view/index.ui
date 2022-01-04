@@ -117,6 +117,13 @@
               </widget>
              </item>
              <item>
+              <widget class="QPushButton" name="btn_refrescar">
+               <property name="text">
+                <string>refrescar</string>
+               </property>
+              </widget>
+             </item>
+             <item>
               <widget class="QPushButton" name="btn_frecuencia">
                <property name="text">
                 <string>Calcular frecuencia</string>

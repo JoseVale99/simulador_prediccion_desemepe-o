@@ -145,13 +145,13 @@
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_12">
             <item>
-             <widget class="QLineEdit" name="text_act1_2"/>
+             <widget class="QLineEdit" name="text_act1"/>
             </item>
             <item>
-             <widget class="QLineEdit" name="text_act2_2"/>
+             <widget class="QLineEdit" name="text_act2"/>
             </item>
             <item>
-             <widget class="QLineEdit" name="text_act3_2"/>
+             <widget class="QLineEdit" name="text_act3"/>
             </item>
            </layout>
           </widget>
@@ -199,13 +199,13 @@
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_14">
             <item>
-             <widget class="QLineEdit" name="text_act4_2"/>
+             <widget class="QLineEdit" name="text_act4"/>
             </item>
             <item>
-             <widget class="QLineEdit" name="text_act5_2"/>
+             <widget class="QLineEdit" name="text_act5"/>
             </item>
             <item>
-             <widget class="QLineEdit" name="text_act6_2"/>
+             <widget class="QLineEdit" name="text_act6"/>
             </item>
            </layout>
           </widget>
@@ -252,7 +252,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit_4">
+          <widget class="QLineEdit" name="text_estado">
            <property name="placeholderText">
             <string>Ingrese &quot;SI&quot; o &quot;NO&quot;</string>
            </property>
