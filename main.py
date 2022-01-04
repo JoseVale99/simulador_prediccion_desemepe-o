@@ -1,7 +1,8 @@
 from PyQt5.QtWidgets import (QTableWidgetItem, QApplication,QMainWindow,
-     QDesktopWidget)
+     QDesktopWidget,QWidget)
 import sys
 from view.index import Ui_MainWindow
+from controller.InsertarController import VistaInsertar
 from models.cargar_datos import CargarDatos
 
 class App(QMainWindow):
@@ -15,10 +16,20 @@ class App(QMainWindow):
         size = self.geometry()
         self.move(int((screen.width() - size.width())/2),
                   int((screen.height() - size.height())/2))
-   # -----  Cargar tablas ----- 
+    # Eventos   
+        self.index.btn_insert.clicked.connect(self.show_insert)
+    # Cargar tablas ----- 
         CargarDatos(self.index.tabla_datos,QTableWidgetItem)
+        #  abrir ventada insertar datos
+    def show_insert(self): 
+        self.fom_insertar = QWidget() 
+        self.view_insertar = VistaInsertar()
+        self.view_insertar.vista_insertar.setupUi(self.fom_insertar)
+        self.fom_insertar.show()        
+        
                       
-
+    
+        
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     my_app = App()
