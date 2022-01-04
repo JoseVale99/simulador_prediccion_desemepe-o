@@ -1,9 +1,9 @@
 from  connection.connection import DataBase
 
-bd = DataBase()
+
 
 def CargarDatos(tabla, QTableWidgetItem):
-    global bd
+    bd = DataBase()
     data = bd.getData()
     tabla.setColumnCount(len(data[0]))
     tabla.setRowCount(len(data))
@@ -11,3 +11,5 @@ def CargarDatos(tabla, QTableWidgetItem):
         for column in range(len(data[row])):
             tabla.setItem(
             row, column, QTableWidgetItem(str(data[row][column])))
+
+    
