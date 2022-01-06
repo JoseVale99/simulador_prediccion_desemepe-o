@@ -33,6 +33,7 @@ class App(QMainWindow):
         self.fom_frecuencias = QWidget()
         self.view_frecuencias = VistaFrecuencia()
         self.view_frecuencias.vista_frecuencias.setupUi(self.fom_frecuencias)
+        self.view_frecuencias.InsertDataFrecAct()
         self.fom_frecuencias.show() 
         
                 
