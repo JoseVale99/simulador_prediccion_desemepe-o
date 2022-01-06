@@ -9,3 +9,6 @@ controller/__pycache__/InsertarController.cpython-39.pyc
 controller/__pycache__/FrecuenciasController.cpython-39.pyc
 .gitignore
 view/__pycache__/frecuencias.cpython-39.pyc
+controller/__pycache__/ProbabilidadController.cpython-39.pyc
+.gitignore
+view/__pycache__/probabilidad.cpython-39.pyc
