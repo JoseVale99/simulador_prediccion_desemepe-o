@@ -21,4 +21,9 @@ def setDatos(act1,act2,act3,act4,act5,act6,estado):
     bd = DataBase()
     bd.setData(act1,act2,act3,act4,act5,act6,estado)
     return "Dato insertado con éxito"
+
+def getDatos():
+    bd = DataBase()
+    data = bd.getData()
+    return data 
     
