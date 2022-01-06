@@ -5,6 +5,7 @@ import sys
 from view.index import Ui_MainWindow
 from controller.InsertarController import VistaInsertar
 from controller.FrecuenciasController import VistaFrecuencia
+from controller.ProbabilidadController import VistaProbabilidad
 from models.cargar_datos import CargarDatos, getDelete
 
 class App(QMainWindow):
@@ -22,18 +23,34 @@ class App(QMainWindow):
     # Eventos   
         self.index.btn_insert.clicked.connect(self.show_insert)
         self.index.btn_frecuencia.clicked.connect(self.show_frecuencias)
+        self.index.btn_probabilidad.clicked.connect(self.show_Probabilidad)
         self.index.btn_delete.clicked.connect(self.delete)
 
         
     # Cargar tablas ----- 
         CargarDatos(self.index.tabla_datos,QTableWidgetItem)
     
+    # abrir ventana probabilidad
+    def show_Probabilidad(self):
+        self.fom_probabilidad = QWidget()
+        self.view_probabilidad = VistaProbabilidad()
+        self.view_probabilidad.vista_Probabilidad.setupUi(self.fom_probabilidad)
+        self.view_probabilidad.rellenarProbabilidadesAct()
+        self.fom_probabilidad.show() 
+        
+       
+         
     # Abrir ventana de frecuencias
     def show_frecuencias(self):
         self.fom_frecuencias = QWidget()
         self.view_frecuencias = VistaFrecuencia()
         self.view_frecuencias.vista_frecuencias.setupUi(self.fom_frecuencias)
-        self.view_frecuencias.InsertDataFrecAct()
+        self.view_frecuencias.InsertDataFrecAct(1)
+        self.view_frecuencias.InsertDataFrecAct(2)
+        self.view_frecuencias.InsertDataFrecAct(3)
+        self.view_frecuencias.InsertDataFrecAct(4)
+        self.view_frecuencias.InsertDataFrecAct(5)
+        self.view_frecuencias.InsertDataFrecAct(6)
         self.fom_frecuencias.show() 
         
                 
