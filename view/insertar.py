@@ -19,12 +19,6 @@ class Ui_insertar(object):
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout(self.frame_11)
         self.horizontalLayout_5.setSizeConstraint(QtWidgets.QLayout.SetMinimumSize)
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
-        self.label_11 = QtWidgets.QLabel(self.frame_11)
-        self.label_11.setObjectName("label_11")
-        self.horizontalLayout_5.addWidget(self.label_11)
-        self.lineEdit_3 = QtWidgets.QLineEdit(self.frame_11)
-        self.lineEdit_3.setObjectName("lineEdit_3")
-        self.horizontalLayout_5.addWidget(self.lineEdit_3)
         self.verticalLayout_9.addWidget(self.frame_11)
         spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         self.verticalLayout_9.addItem(spacerItem)
@@ -159,9 +153,7 @@ class Ui_insertar(object):
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Insetar datos"))
-        self.groupBox.setTitle(_translate("Form", "Insertar"))
-        self.label_11.setText(_translate("Form", "No. Boleta:"))
-        self.lineEdit_3.setPlaceholderText(_translate("Form", "Ingresa número de boleta"))
+        self.groupBox.setTitle(_translate("Form", "Insertar datos de entrenamiento"))
         self.label_12.setText(_translate("Form", "Para cada actividad, introduce \"A\" si aprobo, \"R\" si reprobo o \"NP\" si no presento."))
         self.label_13.setText(_translate("Form", "Actividad 1:"))
         self.label_14.setText(_translate("Form", "Actividad 2:"))
