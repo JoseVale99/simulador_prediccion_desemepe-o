@@ -1,333 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>966</width>
-    <height>635</height>
+    <width>1122</width>
+    <height>648</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Frecuencias</string>
+   <string>Form</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QGroupBox" name="groupBox">
-      <property name="title">
-       <string>Tablas de Frecuencia</string>
-      </property>
-      <property name="flat">
-       <bool>true</bool>
-      </property>
-      <layout class="QGridLayout" name="gridLayout">
-       <item row="0" column="1">
-        <widget class="QLabel" name="label_2">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Tablas de Frecuencia</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Actividad 2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Actividad 6</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QTableWidget" name="tabla_fre_act3">
+        <row>
          <property name="text">
-          <string>Actividad 2</string>
+          <string>A</string>
          </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QTableWidget" name="tabla_fre_act2">
-         <row>
-          <property name="text">
-           <string>A</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>NP </string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>R</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>Total</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>NO</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>SI</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Total</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="label_3">
+        </row>
+        <row>
          <property name="text">
-          <string>Actividad 3</string>
+          <string>NP</string>
          </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <widget class="QTableWidget" name="tabla_fre_act4">
-         <row>
-          <property name="text">
-           <string>A</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>NP</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>R</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>Total</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>NO</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>SI</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Total</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QTableWidget" name="tabla_fre_act5">
-         <row>
-          <property name="text">
-           <string>A</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>NP</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>R</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>Total</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>NO</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>SI</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Total</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-       <item row="2" column="2">
-        <widget class="QLabel" name="label_6">
+        </row>
+        <row>
          <property name="text">
-          <string>Actividad 6</string>
+          <string>R</string>
          </property>
-        </widget>
-       </item>
-       <item row="5" column="2">
-        <widget class="QPushButton" name="pushButton">
+        </row>
+        <row>
          <property name="text">
-          <string>Regresar</string>
+          <string>Total</string>
          </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_4">
+        </row>
+        <column>
          <property name="text">
-          <string>Actividad 4</string>
+          <string>NO</string>
          </property>
-        </widget>
-       </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="label">
+        </column>
+        <column>
          <property name="text">
-          <string>Actividad 1</string>
+          <string>SI</string>
          </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLabel" name="label_5">
+        </column>
+        <column>
          <property name="text">
-          <string>Actividad 5</string>
+          <string>Total</string>
          </property>
-        </widget>
-       </item>
-       <item row="1" column="2">
-        <widget class="QTableWidget" name="tabla_fre_act3">
-         <row>
-          <property name="text">
-           <string>A</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>NP</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>R</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>Total</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>NO</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>SI</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Total</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QTableWidget" name="tabla_fre_act1">
-         <row>
-          <property name="text">
-           <string>A</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>NP</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>R</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>Total</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>NO</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>SI</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Total</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-       <item row="3" column="2">
-        <widget class="QTableWidget" name="tabla_fre_act6">
-         <row>
-          <property name="text">
-           <string>A</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>NP</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>R</string>
-          </property>
-         </row>
-         <row>
-          <property name="text">
-           <string>Total</string>
-          </property>
-         </row>
-         <column>
-          <property name="text">
-           <string>NO</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>SI</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>Total</string>
-          </property>
-         </column>
-        </widget>
-       </item>
-       <item row="4" column="2">
-        <spacer name="verticalSpacer">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
+        </column>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QTableWidget" name="tabla_fre_act6">
+        <row>
+         <property name="text">
+          <string>A</string>
          </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Minimum</enum>
+        </row>
+        <row>
+         <property name="text">
+          <string>NP</string>
          </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>10</width>
-           <height>15</height>
-          </size>
+        </row>
+        <row>
+         <property name="text">
+          <string>R</string>
          </property>
-        </spacer>
-       </item>
-      </layout>
-     </widget>
-    </item>
-   </layout>
-  </widget>
+        </row>
+        <row>
+         <property name="text">
+          <string>Total</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>NO</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>SI</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Total</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QTableWidget" name="tabla_fre_act2">
+        <row>
+         <property name="text">
+          <string>A</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>NP </string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>R</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Total</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>NO</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>SI</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Total</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QTableWidget" name="tabla_fre_act5">
+        <row>
+         <property name="text">
+          <string>A</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>NP</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>R</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Total</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>NO</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>SI</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Total</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>15</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Actividad 5</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Actividad 1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QTableWidget" name="tabla_fre_act4">
+        <row>
+         <property name="text">
+          <string>A</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>NP</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>R</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Total</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>NO</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>SI</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Total</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Actividad 4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Actividad 3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QTableWidget" name="tabla_fre_act1">
+        <row>
+         <property name="text">
+          <string>A</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>NP</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>R</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Total</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>NO</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>SI</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Total</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>

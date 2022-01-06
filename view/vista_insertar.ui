@@ -17,7 +17,7 @@
    <item>
     <widget class="QGroupBox" name="groupBox">
      <property name="title">
-      <string>Insertar</string>
+      <string>Insertar datos de entrenamiento</string>
      </property>
      <property name="flat">
       <bool>true</bool>
@@ -35,20 +35,6 @@
          <property name="sizeConstraint">
           <enum>QLayout::SetMinimumSize</enum>
          </property>
-         <item>
-          <widget class="QLabel" name="label_11">
-           <property name="text">
-            <string>No. Boleta:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="lineEdit_3">
-           <property name="placeholderText">
-            <string>Ingresa número de boleta</string>
-           </property>
-          </widget>
-         </item>
         </layout>
        </widget>
       </item>
