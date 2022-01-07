@@ -9,6 +9,7 @@ from controller.ProbabilidadController import VistaProbabilidad
 from controller.PredecirController import VistaPredecir
 from models.cargar_datos import CargarDatos, getDelete
 
+
 class App(QMainWindow):
     def __init__(self):
         super(App, self).__init__()
@@ -37,7 +38,11 @@ class App(QMainWindow):
         self.fom_predecir = QWidget()
         self.view_fom_predecir = VistaPredecir()
         self.view_fom_predecir.vista_pred.setupUi(self.fom_predecir)
-        self.view_fom_predecir.vista_pred.btn_pred.clicked.connect(lambda: self.view_fom_predecir.probabilidadesAPriori())
+        self.view_fom_predecir.vista_pred.btn_pred.clicked.connect(
+            lambda: self.view_fom_predecir.buscarProbPosi(
+                self.view_fom_predecir.vista_pred.text_act1,
+                self.view_fom_predecir.vista_pred.text_act2
+            ))
         self.fom_predecir.show()
     
     # abrir ventana probabilidad
