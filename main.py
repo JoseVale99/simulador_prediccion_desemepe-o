@@ -6,6 +6,7 @@ from view.index import Ui_MainWindow
 from controller.InsertarController import VistaInsertar
 from controller.FrecuenciasController import VistaFrecuencia
 from controller.ProbabilidadController import VistaProbabilidad
+from controller.PredecirController import VistaPredecir
 from models.cargar_datos import CargarDatos, getDelete
 
 class App(QMainWindow):
@@ -24,11 +25,20 @@ class App(QMainWindow):
         self.index.btn_insert.clicked.connect(self.show_insert)
         self.index.btn_frecuencia.clicked.connect(self.show_frecuencias)
         self.index.btn_probabilidad.clicked.connect(self.show_Probabilidad)
+        self.index.btn_predicir.clicked.connect(self.show_predecir)
         self.index.btn_delete.clicked.connect(self.delete)
 
         
     # Cargar tablas ----- 
         CargarDatos(self.index.tabla_datos,QTableWidgetItem)
+    
+    # abrir ventana predecir
+    def show_predecir(self):
+        self.fom_predecir = QWidget()
+        self.view_fom_predecir = VistaPredecir()
+        self.view_fom_predecir.vista_pred.setupUi(self.fom_predecir)
+        self.view_fom_predecir.vista_pred.btn_pred.clicked.connect(lambda: self.view_fom_predecir.probabilidadesAPriori())
+        self.fom_predecir.show()
     
     # abrir ventana probabilidad
     def show_Probabilidad(self):
@@ -51,6 +61,7 @@ class App(QMainWindow):
         self.view_frecuencias.InsertDataFrecAct(4)
         self.view_frecuencias.InsertDataFrecAct(5)
         self.view_frecuencias.InsertDataFrecAct(6)
+        
         self.fom_frecuencias.show() 
         
                 
