@@ -12,3 +12,6 @@ view/__pycache__/frecuencias.cpython-39.pyc
 controller/__pycache__/ProbabilidadController.cpython-39.pyc
 .gitignore
 view/__pycache__/probabilidad.cpython-39.pyc
+controller/__pycache__/PredecirController.cpython-39.pyc
+.gitignore
+view/__pycache__/predecir.cpython-39.pyc
